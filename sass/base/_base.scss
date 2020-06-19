@@ -1,0 +1,87 @@
+:root {
+  --color-primary: #000000;
+
+  --color-secondary-1: #65C100;
+
+  --color-tertiary-1: #EBA430;
+
+  --color-grey-1: #AAAAAA;
+  --color-grey-2: #999999;
+
+  --color-white: #fff;
+
+  --line-color: #DDDDDD;
+
+  --bg-color-1: #F9F9FB;
+  --bg-color-2: #979797;
+
+  --default-font-size: 1.6rem;
+
+  --shadow-light: 0 0 2.5rem rgba(0,0,0,.05);
+}
+
+$giant  : giant;
+$bigDesktop : bigDesktop;
+$desktop : desktop;
+$tablet : tablet;
+$thone : thone;
+$phone : phone;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: inherit;
+}
+
+.flickity-viewport {
+  height: 390px !important;
+  // border: 3px solid orangered;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: var(--color-secondary-1);
+}
+
+.flickity-prev-next-button  {
+  border-radius: 0px !important;
+  height: 100% !important;
+  width: 4% !important;
+  @media only screen and (max-width: 768px) {
+    width: 7% !important;
+  }
+}
+
+.flickity-prev-next-button {
+  right: 0 !important;
+}
+
+.flickity-prev-next-button.previous {
+  left: 0px !important;
+}
+
+.flickity-button-icon {
+  width: 30% !important;
+  left: 37% !important;
+  top: 15% !important;
+  @media only screen and (max-width: 768px) {
+    width: 60% !important;
+    left: 22% !important;
+  }
+}
+
+.flickity-page-dots .dot {
+  
+  @media (max-width: 768px) {
+    margin: 0 4px;
+  }
+}

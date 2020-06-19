@@ -1,0 +1,95 @@
+.card {
+  width: 20.19rem;
+  height: 11.5rem;
+  display: flex;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.book {
+  height: 100%;
+  width: 60%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.book__details {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 0.71rem;
+
+  &--status {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.93rem;
+    color: var(--color-secondary-1);
+    text-transform: capitalize;
+  }
+
+  &--title {
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 0.93rem;
+    color: var(--color-primary);
+    margin-bottom: 0.4rem;
+
+    @media (max-width: 768px) {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+.book__foot {
+  margin-top: 0.5625rem;;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+
+  &--left {
+    display: flex;
+    width: 50%;
+    max-width: 6.25rem;
+    padding-left: 0.625rem;
+    justify-content: start;
+    @media (max-width: 768px) {
+      padding-left: 0rem;
+    }
+
+    &-2 {
+      text-align: start;
+      margin-left: 0.7rem;
+    }
+  }
+}
+
+.vertical-line {
+  height: 1.4rem;
+  width: 1px;
+  background-color: var(--line-color);
+  position: absolute;
+  left: 48%;
+  transform: translate(50%, 33%);
+}
+
+.star-icons {
+  margin-right: -0.24rem;
+  @media (max-width: 768px) {
+    width: 0.8rem;
+    margin-right: -0.2rem;
+  }
+}
+
+.heart-icon {
+  width: 0.8rem;
+  @media (max-width: 768px) {
+    width: 0.6rem;
+  }
+}

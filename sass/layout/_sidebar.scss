@@ -1,0 +1,126 @@
+// .sidebar {
+  //   width: 21.875rem;
+  //   height: 100%;
+  //   background-color: inherit;
+  //   box-shadow: -10px 0px 40px rgba(0, 0, 0, 0.1);
+  // }
+
+.sidebar-container {
+  width: 24%;
+  @media only screen and (max-width: 768px) {
+    width: 0%;
+  }
+}
+
+.sidebar {
+  width: 20%;
+  height: calc(100vh - 6.25rem);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 10px rgba(79,79,79,.07);
+  position: fixed;
+
+  @include media($tablet) {
+    width: 80vw;
+    z-index: 20;
+    height: 100vh;
+    top: 0;
+    background-color: white;
+    left: -1500px;
+    transition: all .2s;
+    z-index: 999999;
+  }
+}
+
+.section {
+  padding: 1.925rem 2.325rem 1rem 2.5rem;
+
+  @media only screen and (max-width: 768px) {
+    padding: 1.325rem 1.6875rem 1rem 1.6875rem;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--line-color);
+  }
+
+  &__heading {
+    font-weight: 500;
+    font-size: 0.85rem;
+    line-height: 1rem;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.9rem;
+    @media only screen and (max-width: 768px) {
+      margin-top: 0rem;
+    }
+
+    &--title {
+      font-weight: 400;
+      font-size: 0.85rem;
+      line-height: 1rem;
+      color: inherit;
+      @media (max-width: 768px) {
+        font-weight: 300;
+      }
+    }
+
+    &--count {
+      font-weight: 800;
+      font-size: 0.7rem;
+      line-height: 0.75rem;
+      color: var(--color-white);
+      height: 1.2rem;
+      width: 1.2rem;
+      background-color: var(--color-secondary-1);
+      border-radius: 0.625rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 0.75rem;
+      @media (max-width: 768px) {
+        font-size: 0.75rem;
+      }
+    }
+
+    &--numbers {
+      color: var(--color-grey-1);
+      font-size: 0.75rem;
+      font-weight: 300;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+
+// .sidebar_menu-container {
+//   padding: 1.6875rem 
+// }
+
+.show-mobile-menu {
+  transform: translateX(1500px);
+}
+
+.menu-back-arrow {
+  padding-left: 1.6875rem;
+  padding-top: 1.6875rem;
+}
+
+.brand-container-mobile {
+  padding-left: 1.6875rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 19;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.containerr {
+  padding-bottom: 3rem;
+}

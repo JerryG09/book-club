@@ -1,0 +1,46 @@
+.main-section {
+  width: 75%;
+  height: 100%;
+  
+  @media (max-width: 768px) {
+    width: 100%; 
+  }
+}
+
+.main-section__heading {
+  width: 100%;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--line-color);
+
+  @media (max-width: 768px) {
+    margin: 4rem auto 0 auto;
+    width: 95%;
+  }
+
+  &--text {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.875rem;
+    letter-spacing: 3px;
+    line-height: 16px;
+  }
+}
+
+.recently-added,
+.all-books  {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.recently-added,
+.all-books {
+  @media (max-width: 768px) {
+    margin-left: 0.4rem;
+  }
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}

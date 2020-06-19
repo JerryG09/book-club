@@ -1,0 +1,35 @@
+@mixin circle {
+  display: block;
+  height: 3.125rem;
+  width: 3.125rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 520px) {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+@mixin media($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.4em) { @content };
+  }
+  @if $breakpoint == thone {
+    @media only screen and (max-width: 47.9em) { @content };
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 768px) { @content }; 
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 74.9em) { @content };
+  }
+  @if $breakpoint == bigDesktop {
+    @media only screen and (max-width: 89.9em) { @content };
+  }
+  @if $breakpoint == giant {
+    @media only screen and (min-width: 89.9em) { @content };
+  }
+}

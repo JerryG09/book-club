@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Book Club</title>
+</head>
+<body>
+  <div class="containerr">
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__container">
+          <div class="brand-container">
+            <div class="show-on-mobile">
+              <div id="menuHamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </div>
+            <div class="brand u-margin-right-1">
+              <img src="./assets/icons/logo-white.svg" alt="brand logo" class="" />
+            </div>
+            <div class="show-on-desktop">
+              <div class="brand__heading">
+                <h3 class="brand__heading--primary">Quidax Book Club</h3>
+                <span class="brand__heading--secondary u-display-block">Admin</span>
+              </div>
+            </div>
+          </div>
+          <div class="show-on-desktop">
+
+            <div class="search-container">
+              <div class="search flex">
+                <input class="search__input" placeholder="Search books, genres, authors, etc." />
+                <div class="search__icon flex">
+                  <img src="./assets/icons/search.svg" alt="search icon" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="nav__right">
+            <div class="show-on-mobile">
+              <div class="search-container-mobile">
+                <div class="search-box__mobile">
+                  <div class="back-arrow flex">
+                    <img src="./assets/icons/arrow-left.svg" alt="arrow icon" />
+                  </div>
+                  <div class="mobile-search flex">
+                    <input class="mobile-search__input" placeholder="Search icon" />
+                    <div class="mobile-search__icon flex">
+                      <img src="./assets/icons/search.svg" alt="search icon" />
+                    </div>
+                  </div>
+                </div>
+                <div class="search__icon--mobile">
+                  <img src="./assets/icons/search.svg" alt="search icon" />
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <img src="./assets/icons/logo-dark.svg" alt="brand logo" />
+            </div>
+            <div class="notification-container">
+              <div class="notification-container__counter">3</div>
+              <img src="./assets/icons/notification'.svg" alt="notification icon" />
+            </div>
+            <div class="nav__right--user">
+              <img src="./assets/images/avatar.png" alt="user avatar" class="nav__right--image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main View -->
+    <div class="container">
+      <main class="main-container">
+        <!-- Side bar -->
+        <div class="sidebar-container">
+          <div class="sidebar">
+            <div class="sidebar_menu-container">
+              <!-- Show Only On Mobile -->
+              <div class="show-on-mobile">
+                <div class="menu-back-arrow">
+                  <img src="./assets/icons/arrow-left.svg" alt="arrow icon" />
+                </div>
+                <div class="brand-container-mobile">
+                  <div class="brand u-margin-right-1">
+                    <img src="./assets/icons/logo-white.svg" alt="brand logo" class="" />
+                  </div>
+                  <div class="brand__heading">
+                    <h3 class="brand__heading--primary">Quidax Book Club</h3>
+                    <span class="brand__heading--secondary u-display-block">Admin</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Sidebar Content -->
+              <div class="section">
+                <h5 class="section__heading color-secondary u-margin-bottom-1">Home</h5>
+                <div class="section__group">
+                  <h6 class="section__group--title">Profile</h6>
+                  <!-- <span class="section__group--count">3</span> -->
+                </div>
+                <div class="section__group u-margin-top-1">
+                  <h6 class="section__group--title">Notifications</h6>
+                  <span class="section__group--count">13</span>
+                </div>
+              </div>
+              <div class="section">
+                <h5 class="section__heading color-primary u-margin-bottom-1">Explore</h5>
+                <div class="section__group">
+                  <h6 class="section__group--title">Books</h6>
+                  <span class="section__group--numbers">273</span>
+                </div>
+                <div class="section__group u-margin-top-1">
+                  <h6 class="section__group--title">Genres</h6>
+                  <span class="section__group--numbers">42</span>
+                </div>
+                <div class="section__group u-margin-top-1">
+                  <h6 class="section__group--title">Authors</h6>
+                  <span class="section__group--numbers">106</span>
+                </div>
+              </div>
+              <div class="section">
+                <h5 class="section__heading color-primary u-margin-bottom-2">My Books</h5>
+                <div class="section__group">
+                  <h6 class="section__group--title">Queued</h6>
+                  <span class="section__group--numbers">3</span>
+                </div>
+                <div class="section__group u-margin-top-1">
+                  <h6 class="section__group--title">Currently Borrowed</h6>
+                  <span class="section__group--numbers">0</span>
+                </div>
+                <div class="section__group u-margin-top-1">
+                  <h6 class="section__group--title">Favourites</h6>
+                  <span class="section__group--numbers">19</span>
+                </div>
+                <div class="section__group u-margin-top-1">
+                  <h6 class="section__group--title">History</h6>
+                  <span class="section__group--numbers"></span>
+                </div>
+              </div>
+              <div class="section">
+                <h5 class="section__heading color-primary u-margin-bottom-2">Admin</h5>
+                <div class="section__group">
+                  <h6 class="section__group--title">Book Requests</h6>
+                  <span class="section__group--numbers">3</span>
+                </div>
+                <div class="section__group u-margin-top-1">
+                  <h6 class="section__group--title">Members</h6>
+                  <span class="section__group--numbers">0</span>
+                </div>
+                <div class="section__group u-margin-top-1">
+                  <h6 class="section__group--title"> Library Settings</h6>
+                  <span class="section__group--numbers">19</span>
+                </div>
+                <div class="section__group u-margin-top-1">
+                  <h6 class="section__group--title">History</h6>
+                  <span class="section__group--numbers"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Main Section -->
+        <div class="main-section">
+          <section>
+            <div class="show-on-desktop">
+              <div class="main-section__heading u-margin-top-2 u-margin-bottom-11">
+                <h6 class="main-section__heading--text">Featured Books</h6>
+              </div>
+            </div>
+            <div class="main-carousel"></div>
+          </section>
+
+          <section>
+            <div class="main-section__heading u-margin-top-3">
+              <h6 class="main-section__heading--text">RECENTLY ADDED</h6>
+            </div>
+            <div class="recently-added"></div>
+          </section>
+          
+          <section>
+            <div class="main-section__heading u-margin-top-22">
+              <h6 class="main-section__heading--text">ALL BOOKS</h6>
+            </div>
+            <div class="all-books"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="./js/books.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/autoSuggestion.js"></script>
+</body>
+</html>
